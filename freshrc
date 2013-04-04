@@ -4,11 +4,7 @@ fresh freshshell/fresh bin/fresh --bin
 
 # shell
 fresh 'shell/*'
-
-# aliases
-fresh jasoncodes/dotfiles shell/aliases/\*
-fresh 'aliases/*'
-
+ 
 # config
 fresh jasoncodes/dotfiles config/pryrc --file
 fresh jasoncodes/dotfiles config/gemrc --file
@@ -23,21 +19,16 @@ fresh 'config/*' --file
 fresh freshshell/fresh contrib/completion/fresh-completion.bash
 fresh bobthecow/git-flow-completion git-flow-completion.bash
 
-# scripts
-fresh twe4ked/dotfiles bin/heroku-remote-add --bin
-fresh twe4ked/catacomb bin/catacomb --bin
-fresh jasoncodes/dotfiles bin/wemux/\* --bin
-fresh jasoncodes/dotfiles bin/adduser --bin
-fresh pengwynn/dotfiles bin/git-pr --bin
-fresh pengwynn/dotfiles bin/gxpr --bin
+# aliases
+fresh shell/aliases/\*
 
 # vim
 fresh-options --file=~/.vimrc --marker=\"
   fresh vim/leader.vim
-  fresh twe4ked/dotfiles vim/vundle_before.vim
+  fresh vim/vundle_before.vim
   fresh vim/vundle.vim
   fresh vim/plugins/\*.vim
-  fresh twe4ked/dotfiles vim/vundle_after.vim
+  fresh vim/vundle_after.vim
   fresh vim/autocmds.vim
   fresh vim/functions.vim
   fresh vim/mappings.vim
@@ -47,6 +38,19 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh jasoncodes/dotfiles vim/config/undo.vim
   fresh jasoncodes/dotfiles vim/config/format.vim
   fresh jasoncodes/dotfiles vim/config/tags.vim
+  
 fresh-options
-fresh vim/gvimrc --file
-fresh vim/colors --file=~/.vim/colors/
+  fresh vim/gvimrc --file
+  fresh vim/colors --file=~/.vim/colors/
+
+fresh zsh/\*
+fresh vim/\* --file=/Users/mark/.vimrc
+
+# # scripts
+# fresh twe4ked/dotfiles bin/heroku-remote-add --bin
+# fresh twe4ked/catacomb bin/catacomb --bin
+# fresh jasoncodes/dotfiles bin/wemux/\* --bin
+# fresh jasoncodes/dotfiles bin/adduser --bin
+# fresh pengwynn/dotfiles bin/git-pr --bin
+# fresh pengwynn/dotfiles bin/gxpr --bin
+# 
