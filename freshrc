@@ -1,5 +1,4 @@
-# vim: set ft=sh:
-
+# Vim
 fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 fresh freshshell/fresh-open bin/fresh-open --bin
@@ -11,6 +10,11 @@ fresh-options --file
   fresh jasoncodes/dotfiles config/tmux.conf
 fresh-options
 fresh henrik/dotfiles rubyrc --file=~/.pryrc --filter='cat; echo include RubyRC'
+
+fresh-options --filie=~/.gitconfig
+  fresh twe4ked/dotfiles config/gitconfig
+  fresh config/gitconfig
+fresh-options
 
 # Zsh
 fresh-options --file=~/.zshrc --marker
@@ -65,7 +69,6 @@ fresh jasoncodes/dotfiles shell/config/rbenv.sh
 
 fresh-options
   fresh twe4ked/dotfiles shell/exports.sh
-  # fresh shell/exports.sh
   fresh twe4ked/dotfiles shell/aliases/\*
   fresh twe4ked/dotfiles shell/functions/\*
 fresh-options
