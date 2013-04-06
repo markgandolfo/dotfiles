@@ -1,56 +1,91 @@
 # vim: set ft=sh:
 
 fresh freshshell/fresh bin/fresh --bin
+fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
+fresh freshshell/fresh-open bin/fresh-open --bin
 
-# shell
-fresh 'shell/*'
- 
-# config
-fresh jasoncodes/dotfiles config/pryrc --file
-fresh jasoncodes/dotfiles config/gemrc --file
-fresh jasoncodes/dotfiles config/gitconfig --file
-fresh jasoncodes/dotfiles config/gitignore --file
-fresh jasoncodes/dotfiles config/inputrc --file
-fresh jasoncodes/dotfiles config/tmux.conf --file --marker='#'
-fresh twe4ked/dotfiles config/tmux.conf --file --marker='#'
-fresh 'config/*' --file
-
-# completion
-fresh freshshell/fresh contrib/completion/fresh-completion.bash
-fresh bobthecow/git-flow-completion git-flow-completion.bash
-
-# aliases
-fresh shell/aliases/\*
-
-# vim
-fresh-options --file=~/.vimrc --marker=\"
-  fresh vim/leader.vim
-  fresh vim/vundle_before.vim
-  fresh vim/vundle.vim
-  fresh vim/plugins/\*.vim
-  fresh vim/vundle_after.vim
-  fresh vim/autocmds.vim
-  fresh vim/functions.vim
-  fresh vim/mappings.vim
-  fresh vim/global.vim
-  fresh vim/config/\*.vim
-  fresh jasoncodes/dotfiles vim/config/backups.vim
-  fresh jasoncodes/dotfiles vim/config/undo.vim
-  fresh jasoncodes/dotfiles vim/config/format.vim
-  fresh jasoncodes/dotfiles vim/config/tags.vim
-  
+# Config
+fresh-options --file
+  fresh twe4ked/dotfiles config/\*
+  fresh jasoncodes/dotfiles config/inputrc
+  fresh jasoncodes/dotfiles config/tmux.conf
 fresh-options
-  fresh vim/gvimrc --file
-  fresh vim/colors --file=~/.vim/colors/
+fresh henrik/dotfiles rubyrc --file=~/.pryrc --filter='cat; echo include RubyRC'
 
-fresh zsh/\*
-fresh vim/\* --file=/Users/mark/.vimrc
+# Zsh
+fresh-options --file=~/.zshrc --marker
+  fresh twe4ked/dotfiles zsh/completion.zsh
+  fresh twe4ked/dotfiles zsh/prompt.zsh --ref=7192f1a
+  fresh twe4ked/dotfiles zsh/title.zsh
+  fresh twe4ked/dotfiles zsh/aliases.zsh
+  fresh twe4ked/dotfiles zsh/zshrc
+  fresh twe4ked/dotfiles zsh/keybindings.zsh
 
-# # scripts
-# fresh twe4ked/dotfiles bin/heroku-remote-add --bin
-# fresh twe4ked/catacomb bin/catacomb --bin
-# fresh jasoncodes/dotfiles bin/wemux/\* --bin
-# fresh jasoncodes/dotfiles bin/adduser --bin
-# fresh pengwynn/dotfiles bin/git-pr --bin
-# fresh pengwynn/dotfiles bin/gxpr --bin
-# 
+  # this loads the shell files and needs to be at the bottom of the zshrc for
+  # compdef be availiable
+  fresh freshshell/fresh contrib/source-build.sh
+fresh-options
+
+fresh zsh-users/zsh-completions src/_ack --file=completion/_ack
+fresh-options --file=~/.zshrc
+  fresh rupa/z z.sh
+  fresh sharat87/zsh-vim-mode zsh-vim-mode.plugin.zsh
+  fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh --ref=a38774c
+  fresh robbyrussell/oh-my-zsh plugins/git-flow/git-flow.plugin.zsh --ref=df30eae
+  fresh zsh-users/zsh-history-substring-search zsh-history-substring-search.zsh
+fresh-options
+
+fresh zsh-users/zsh-syntax-highlighting zsh-syntax-highlighting.zsh --file=vendor/zsh-syntax-highlighting.zsh
+fresh zsh-users/zsh-syntax-highlighting highlighters/main/main-highlighter.zsh --file=vendor/highlighters/main/main-highlighter.zsh
+fresh zsh-users/zsh-syntax-highlighting highlighters/brackets/brackets-highlighter.zsh --file=vendor/highlighters/brackets/brackets-highlighter.zsh
+fresh twe4ked/dotfiles zsh/zsh-syntax-highlighting.zsh
+
+# Vim
+fresh-options --file=~/.vimrc --marker=\"
+  fresh twe4ked/dotfiles vim/leader.vim
+  fresh twe4ked/dotfiles vim/vundle_before.vim
+  fresh twe4ked/dotfiles vim/vundle.vim
+  fresh twe4ked/dotfiles vim/vundle_after.vim
+  fresh twe4ked/dotfiles vim/functions.vim
+  fresh twe4ked/dotfiles vim/plugin_config/\*
+  fresh twe4ked/dotfiles vim/vimrc
+  fresh jasoncodes/dotfiles vim/mappings/indent.vim
+  fresh hackling/dotfiles vim/keybindings/numpad.vim
+  fresh vim/plugins/nerdtree.vim
+  fresh vim/keybindings.vim  
+fresh-options
+
+fresh twe4ked/dotfiles vim/gvimrc --file
+fresh twe4ked/dotfiles vim/colors --file=~/.vim/colors/
+
+# Shell
+fresh jasoncodes/dotfiles shell/aliases/\*
+fresh jasoncodes/dotfiles shell/editor.sh
+fresh jasoncodes/dotfiles shell/config/rbenv.sh
+
+fresh-options
+  fresh twe4ked/dotfiles shell/exports.sh
+  # fresh shell/exports.sh
+  fresh twe4ked/dotfiles shell/aliases/\*
+  fresh twe4ked/dotfiles shell/functions/\*
+fresh-options
+
+# irb
+fresh-options --file=~/.irbrc
+  fresh twe4ked/dotfiles config/irb/encoding.rb
+  fresh jasoncodes/dotfiles config/irbrc
+  fresh twe4ked/dotfiles config/irb/prompt.rb
+fresh-options
+
+# bin
+fresh-options --bin
+  fresh twe4ked/dotfiles bin/\*
+  fresh jasoncodes/dotfiles bin/\*
+  fresh jasoncodes/dotfiles bin/wemux/\*
+  fresh pengwynn/dotfiles bin/gxpr
+  fresh defunkt/repl bin/repl
+  # fresh bin/\*
+fresh-options
+
+# iTerm2
+# fresh iterm2 --file=~/.iterm2/ 
