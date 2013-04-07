@@ -1,1 +1,1 @@
-export PATH=PATH:/usr/local/share/npm/bin
+export PATH=$PATH:/usr/local/share/npm/bin
