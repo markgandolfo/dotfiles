@@ -18,19 +18,19 @@ fresh-options
 
 # Zsh
 fresh-options --file=~/.zshrc --marker
-  fresh twe4ked/dotfiles zsh/completion.zsh
-  fresh twe4ked/dotfiles zsh/prompt.zsh --ref=7192f1a
-  fresh twe4ked/dotfiles zsh/title.zsh
-  fresh twe4ked/dotfiles zsh/aliases.zsh
-  fresh twe4ked/dotfiles zsh/zshrc
-  fresh twe4ked/dotfiles zsh/keybindings.zsh
+  fresh markgandolfo/dotfiles zsh/node.zsh
+  fresh markgandolfo/dotfiles shell/aliases/\*
+  fresh markgandolfo/dotfiles shell/functions/\*
+  fresh twe4ked/dotfiles shell/zsh/completion.zsh
+  fresh twe4ked/dotfiles shell/zsh/prompt.zsh --ref=7192f1a
+  fresh twe4ked/dotfiles shell/zsh/title.zsh
+  fresh twe4ked/dotfiles shell/zsh/aliases.zsh
+  fresh twe4ked/dotfiles shell/zsh/zshrc
+  fresh twe4ked/dotfiles shell/zsh/keybindings.zsh
   
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
-  fresh zsh/node.zsh
-  fresh shell/aliases/*
-  fresh shell/functions/*
 fresh-options
 
 fresh zsh-users/zsh-completions src/_ack --file=completion/_ack
