@@ -1,4 +1,3 @@
-FRESH_NO_LOCAL_CHECK=true
 # Vim
 fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
@@ -19,9 +18,14 @@ fresh-options
 
 # Zsh
 fresh-options --file=~/.zshrc --marker
-  fresh markgandolfo/dotfiles zsh/node.zsh
-  fresh markgandolfo/dotfiles shell/aliases/\*
-  fresh markgandolfo/dotfiles shell/functions/\*
+  fresh zsh/node.zsh
+  fresh shell/aliases/git.zsh
+  fresh shell/aliases/mac.zsh
+  fresh shell/aliases/postgres.zsh
+  fresh shell/functions/directory.zsh
+  fresh shell/functions/git.zsh
+  fresh shell/functions/helpers.zsh
+  fresh shell/functions/mac.zsh
 
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
   fresh twe4ked/dotfiles shell/zsh/prompt.zsh --ref=7192f1a
