@@ -28,7 +28,7 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/functions/mac.zsh
 
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
-  fresh twe4ked/dotfiles shell/zsh/prompt.zsh --ref=7192f1a
+  fresh twe4ked/dotfiles shell/zsh/prompt.zsh
   fresh twe4ked/dotfiles shell/zsh/title.zsh
   fresh twe4ked/dotfiles shell/zsh/aliases.zsh
   fresh twe4ked/dotfiles shell/zsh/zshrc
@@ -52,7 +52,7 @@ fresh-options
 fresh zsh-users/zsh-syntax-highlighting zsh-syntax-highlighting.zsh --file=vendor/zsh-syntax-highlighting.zsh
 fresh zsh-users/zsh-syntax-highlighting highlighters/main/main-highlighter.zsh --file=vendor/highlighters/main/main-highlighter.zsh
 fresh zsh-users/zsh-syntax-highlighting highlighters/brackets/brackets-highlighter.zsh --file=vendor/highlighters/brackets/brackets-highlighter.zsh
-fresh twe4ked/dotfiles zsh/zsh-syntax-highlighting.zsh
+fresh twe4ked/dotfiles shell/zsh/zsh-syntax-highlighting.zsh
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"

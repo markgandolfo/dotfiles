@@ -9,7 +9,8 @@ map <Leader>ls :buffers<CR>
 map <Leader>bd :bd<CR>
 
 noremap <leader>i :set list!<CR>
-nmap <leader>ss :source $HOME/.vimrc<CR>
+nmap <leader>sss :source $HOME/.vimrc<CR>
+nmap <leader>vvv :tabe $HOME/.vimrc
 
 " Window Navigation
 " Use ctrl+(h|j|k|j) to move through open windows.
@@ -33,10 +34,6 @@ nnoremap <leader>h *<C-O>
 nnoremap <leader>H *<C-O>:AckFromSearch!<CR>
 
 map <Leader>F :AckFromSearch<CR>
-
-" Use ,d (or ,dd or ,dj or 20,dd) to delete a line without yanking
-nmap <silent> <leader>d "_d
-vmap <silent> <leader>d "_d
 
 " Disable cursor keys
 inoremap <Up> <Nop>
