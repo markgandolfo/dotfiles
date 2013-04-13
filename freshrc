@@ -29,6 +29,8 @@ fresh-options --file=~/.zshrc --marker
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
   fresh zsh/node.zsh
+  fresh shell/aliases/*
+  fresh shell/functions/*
 fresh-options
 
 fresh zsh-users/zsh-completions src/_ack --file=completion/_ack
