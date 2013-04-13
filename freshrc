@@ -1,3 +1,4 @@
+FRESH_NO_LOCAL_CHECK=true
 # Vim
 fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
@@ -21,6 +22,7 @@ fresh-options --file=~/.zshrc --marker
   fresh markgandolfo/dotfiles zsh/node.zsh
   fresh markgandolfo/dotfiles shell/aliases/\*
   fresh markgandolfo/dotfiles shell/functions/\*
+
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
   fresh twe4ked/dotfiles shell/zsh/prompt.zsh --ref=7192f1a
   fresh twe4ked/dotfiles shell/zsh/title.zsh
@@ -32,6 +34,7 @@ fresh-options --file=~/.zshrc --marker
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
 fresh-options
+
 
 fresh zsh-users/zsh-completions src/_ack --file=completion/_ack
 fresh-options --file=~/.zshrc
