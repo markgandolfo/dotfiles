@@ -7,7 +7,7 @@ fresh freshshell/fresh-open bin/fresh-open --bin
 fresh-options --file
   fresh twe4ked/dotfiles config/\*
   fresh jasoncodes/dotfiles config/inputrc
-  fresh jasoncodes/dotfiles config/tmux.conf
+  fresh config/tmux.conf
 fresh-options
 fresh henrik/dotfiles rubyrc --file=~/.pryrc --filter='cat; echo include RubyRC'
 
@@ -22,6 +22,8 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/aliases/git.zsh
   fresh shell/aliases/mac.zsh
   fresh shell/aliases/postgres.zsh
+  fresh shell/aliases/heroku.zsh
+  fresh shell/aliases/rails.zsh
   fresh shell/functions/directory.zsh
   fresh shell/functions/git.zsh
   fresh shell/functions/helpers.zsh
