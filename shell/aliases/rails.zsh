@@ -1,0 +1,1 @@
+alias rspec="rake spec"
