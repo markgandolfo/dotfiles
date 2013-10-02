@@ -39,6 +39,7 @@ fresh-options --file=~/.zshrc --marker
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
+  fresh shell/shell.zsh
 fresh-options
 
 
