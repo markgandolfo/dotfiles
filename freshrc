@@ -68,6 +68,7 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh jasoncodes/dotfiles vim/mappings/indent.vim
   fresh hackling/dotfiles vim/keybindings/numpad.vim
   fresh vim/plugins/nerdtree.vim
+  fresh vim/plugins/jade_syntax.vim
   fresh vim/keybindings.vim 
   fresh vim/vimrc.vim 
 fresh-options
