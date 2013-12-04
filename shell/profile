@@ -17,13 +17,6 @@ export MAKEFLAGS='-j 3'
 # our own bin dir as the highest priority, followed by /usr/local/bin
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:"$PATH"
 
-# I love colour
-if ls --version 2> /dev/null | grep -q 'GNU coreutils'
-then
-  export GREP_OPTIONS='--color=auto'
-  alias ls="ls --color=auto --classify --block-size=\'1"
-fi
-
 # history
 export HISTSIZE=100000
 export HISTFILESIZE=100000

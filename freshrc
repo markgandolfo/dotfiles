@@ -1,3 +1,11 @@
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='mac'
+fi
+
 # Vim
 fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
@@ -20,14 +28,17 @@ fresh-options
 fresh-options --file=~/.zshrc --marker
   fresh zsh/node.zsh
   fresh shell/aliases/git.zsh
-  fresh shell/aliases/mac.zsh
   fresh shell/aliases/shortcuts.zsh
   fresh shell/aliases/heroku.zsh
   fresh shell/aliases/rails.zsh
   fresh shell/functions/directory.zsh
   fresh shell/functions/git.zsh
   fresh shell/functions/helpers.zsh
-  fresh shell/functions/mac.zsh
+  if [[ $platform == 'linux' ]]; then
+    fresh shell/functions/linux.zsh
+  elif [[ $platform == 'mac' ]]; then
+     fresh shell/functions/mac.zsh
+  fi
 
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
   fresh twe4ked/dotfiles shell/zsh/prompt.zsh
@@ -39,7 +50,6 @@ fresh-options --file=~/.zshrc --marker
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
-  fresh shell/shell.zsh
 fresh-options
 
 
