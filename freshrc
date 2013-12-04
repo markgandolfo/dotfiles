@@ -21,7 +21,7 @@ fresh-options --file=~/.zshrc --marker
   fresh zsh/node.zsh
   fresh shell/aliases/git.zsh
   fresh shell/aliases/mac.zsh
-  fresh shell/aliases/postgres.zsh
+  fresh shell/aliases/shortcuts.zsh
   fresh shell/aliases/heroku.zsh
   fresh shell/aliases/rails.zsh
   fresh shell/functions/directory.zsh
