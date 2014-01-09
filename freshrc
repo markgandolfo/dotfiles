@@ -86,7 +86,7 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh vim/plugins/jade_syntax.vim
   fresh vim/plugins/clojure.vim
   fresh vim/keybindings.vim 
-  fresh vim/vimrc.vim 
+  fresh vim/guifont.vim 
 fresh-options
 
 fresh twe4ked/dotfiles vim/gvimrc --file
