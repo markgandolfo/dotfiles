@@ -4,3 +4,7 @@
 Icon?
 .DS_Store
 .dropbox
+
+emacs.d/elpa/*
+emacs.d/elpa/archives/**
+emacs.d/eshell/*
