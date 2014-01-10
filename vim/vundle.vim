@@ -27,7 +27,6 @@ Bundle 'rking/vim-ruby-refactoring'
 Bundle 'bkad/CamelCaseMotion'
 
 " Navigation
-Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
 Bundle 'mileszs/ack.vim'

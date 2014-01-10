@@ -76,15 +76,15 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh twe4ked/dotfiles vim/leader.vim
   fresh twe4ked/dotfiles vim/vundle_before.vim
   fresh vim/vundle.vim
+  fresh vim/plugins/nerdtree.vim
+  fresh vim/plugins/jade_syntax.vim
+  fresh vim/plugins/clojure.vim
   fresh twe4ked/dotfiles vim/vundle_after.vim
   fresh twe4ked/dotfiles vim/functions.vim
   fresh twe4ked/dotfiles vim/plugin_config/\*
   fresh twe4ked/dotfiles vim/vimrc
   fresh jasoncodes/dotfiles vim/mappings/indent.vim
   fresh hackling/dotfiles vim/keybindings/numpad.vim
-  fresh vim/plugins/nerdtree.vim
-  fresh vim/plugins/jade_syntax.vim
-  fresh vim/plugins/clojure.vim
   fresh vim/keybindings.vim 
   fresh vim/guifont.vim 
 fresh-options

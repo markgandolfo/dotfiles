@@ -22,9 +22,6 @@ map <C-l> <C-w>l
 " Clear search
 map <silent><Leader>/ :nohls<CR>
 
-" Command W
-map <Leader>w :CommandW<CR>
-
 " Ack with <leader>f
 map <Leader>f :Ack!<Space>
 
@@ -43,8 +40,6 @@ nmap K <Esc>
 
 " I don't like <c-r>
 map U :redo<CR>
-
-map <leader>p :PromoteToLet<cr>
 
 " Marked (markdown preview)
 command! Marked silent !open -a "Marked.app" "%:p"
