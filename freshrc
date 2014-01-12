@@ -49,7 +49,6 @@ fresh-options --file=~/.zshrc --marker
      fresh shell/aliases/mac.zsh
   fi
 
-  
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
@@ -72,20 +71,16 @@ fresh twe4ked/dotfiles shell/zsh/zsh-syntax-highlighting.zsh
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"
-  fresh twe4ked/dotfiles vim/leader.vim
-  fresh twe4ked/dotfiles vim/vundle_before.vim
+  fresh vim/leader.vim
+  fresh vim/vundle_before.vim
   fresh vim/vundle.vim
-  fresh vim/plugins/nerdtree.vim
-  fresh vim/plugins/jade_syntax.vim
-  fresh vim/plugins/clojure.vim
-  fresh vim/plugins/go.vim
-  fresh twe4ked/dotfiles vim/vundle_after.vim
+  fresh vim/vundle_after.vim
   fresh twe4ked/dotfiles vim/functions.vim
-  fresh twe4ked/dotfiles vim/plugin_config/\*
+  fresh vim/plugins/\*
   fresh twe4ked/dotfiles vim/vimrc
   fresh jasoncodes/dotfiles vim/mappings/indent.vim
   fresh hackling/dotfiles vim/keybindings/numpad.vim
-  fresh vim/keybindings.vim 
+  fresh vim/keybindings.vim
 fresh-options
 
 fresh twe4ked/dotfiles vim/gvimrc --file

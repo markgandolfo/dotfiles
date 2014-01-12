@@ -27,16 +27,25 @@ Bundle 'rking/vim-ruby-refactoring'
 Bundle 'bkad/CamelCaseMotion'
 
 " Navigation
+Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
 Bundle 'mileszs/ack.vim'
 
 " Language
+Bundle 'digitaltoad/vim-jade'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-markdown'
+Bundle 'jnwhiteh/vim-golang'
+
+" Clojure
+Bundle 'tpope/vim-fireplace' 
+Bundle 'tpope/vim-classpath'
+Bundle 'guns/vim-clojure-static'
+Bundle 'amdt/vim-niji'
 
 " Git
 Bundle 'tpope/vim-fugitive'
