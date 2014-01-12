@@ -5,7 +5,6 @@ Bundle 'tpope/vim-classpath'
 Bundle 'guns/vim-clojure-static'
 Bundle 'amdt/vim-niji'
 
-
 function! _OpenClouse()
   " Make sure syntax is on and filetype plugin indent is on
   " For clojure static
