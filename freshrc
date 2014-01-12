@@ -6,7 +6,6 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
    platform='mac'
 fi
 
-# Vim
 fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 fresh freshshell/fresh-open bin/fresh-open --bin
@@ -79,6 +78,7 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh vim/plugins/nerdtree.vim
   fresh vim/plugins/jade_syntax.vim
   fresh vim/plugins/clojure.vim
+  fresh vim/plugins/go.vim
   fresh twe4ked/dotfiles vim/vundle_after.vim
   fresh twe4ked/dotfiles vim/functions.vim
   fresh twe4ked/dotfiles vim/plugin_config/\*
@@ -86,7 +86,6 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh jasoncodes/dotfiles vim/mappings/indent.vim
   fresh hackling/dotfiles vim/keybindings/numpad.vim
   fresh vim/keybindings.vim 
-  fresh vim/guifont.vim 
 fresh-options
 
 fresh twe4ked/dotfiles vim/gvimrc --file
