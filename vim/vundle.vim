@@ -14,6 +14,7 @@ Bundle 'dterei/VimBookmarking'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'amdt/vim-niji'
 
 " Editing
 Bundle 'godlygeek/tabular'
@@ -42,10 +43,9 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'jnwhiteh/vim-golang'
 
 " Clojure
-Bundle 'tpope/vim-fireplace' 
+Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-classpath'
 Bundle 'guns/vim-clojure-static'
-Bundle 'amdt/vim-niji'
 
 " Git
 Bundle 'tpope/vim-fugitive'
