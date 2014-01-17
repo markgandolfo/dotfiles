@@ -71,6 +71,7 @@ fresh twe4ked/dotfiles shell/zsh/zsh-syntax-highlighting.zsh
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"
+  fresh vim/backspace.vim
   fresh vim/leader.vim
   fresh vim/vundle_before.vim
   fresh vim/vundle.vim
