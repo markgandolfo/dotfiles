@@ -41,6 +41,7 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'elixir-lang/vim-elixir'
 
 " Clojure
 Bundle 'tpope/vim-fireplace'

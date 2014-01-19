@@ -85,7 +85,7 @@ fresh-options --file=~/.vimrc --marker=\"
 fresh-options
 
 fresh twe4ked/dotfiles vim/gvimrc --file
-fresh twe4ked/dotfiles vim/colors --file=~/.vim/colors/
+fresh vim/colors --file=~/.vim/colors/
 
 # Emacs
 [ -d ~/.emacs.d ] && rm -rf ~/.emacs.d
