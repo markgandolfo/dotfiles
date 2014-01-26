@@ -43,6 +43,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'mustache/vim-mustache-handlebars'
 
 " Clojure
 Bundle 'tpope/vim-fireplace'
