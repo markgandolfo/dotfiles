@@ -117,3 +117,8 @@ fresh-options
 
 # iTerm2
 # fresh iterm2 --file=~/.iterm2/
+
+# Some mac defaults to make life nicer
+if [[ $platform == 'mac' ]]; then
+  defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
+fi
