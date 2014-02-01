@@ -87,10 +87,6 @@ fresh-options
 fresh twe4ked/dotfiles vim/gvimrc --file
 fresh vim/colors --file=~/.vim/colors/
 
-# Emacs
-[ -d ~/.emacs.d ] && rm -rf ~/.emacs.d
-ln -sf $FRESH_LOCAL/emacs.d ~/.emacs.d
-
 # Shell
 fresh jasoncodes/dotfiles shell/aliases/\*
 fresh jasoncodes/dotfiles shell/editor.sh
