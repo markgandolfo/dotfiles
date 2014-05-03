@@ -90,7 +90,6 @@ fresh vim/colors --file=~/.vim/colors/
 # Shell
 fresh jasoncodes/dotfiles shell/aliases/\*
 fresh jasoncodes/dotfiles shell/editor.sh
-fresh jasoncodes/dotfiles shell/config/rbenv.sh
 
 fresh-options
   fresh twe4ked/dotfiles shell/exports.sh
