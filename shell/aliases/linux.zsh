@@ -4,3 +4,5 @@ then
   export GREP_OPTIONS='--color=auto'
   alias ls="ls -G --classify --block-size=\'1"
 fi
+
+alias nohistory="export HISTORY=/dev/null"
