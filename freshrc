@@ -31,8 +31,9 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/aliases/heroku.zsh
   fresh shell/aliases/rails.zsh
   fresh shell/functions/directory.zsh
-  fresh shell/functions/git.zsh
   fresh shell/functions/helpers.zsh
+  fresh shell/functions/editor.sh
+  fresh shell/functions/rails.sh
   if [[ $platform == 'mac' ]]; then
      fresh shell/functions/mac.zsh
   fi
@@ -88,7 +89,6 @@ fresh twe4ked/dotfiles vim/gvimrc --file
 fresh vim/colors --file=~/.vim/colors/
 
 # Shell
-fresh jasoncodes/dotfiles shell/aliases/\*
 fresh jasoncodes/dotfiles shell/editor.sh
 
 fresh-options
@@ -109,7 +109,6 @@ fresh-options --bin
   fresh twe4ked/dotfiles bin/\*
   fresh jasoncodes/dotfiles bin/\*
   fresh jasoncodes/dotfiles bin/wemux/\*
-  fresh pengwynn/dotfiles bin/gxpr
   fresh defunkt/repl bin/repl
   # fresh bin/\*
 fresh-options
