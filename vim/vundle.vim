@@ -29,7 +29,7 @@ Bundle 'bkad/CamelCaseMotion'
 
 " Navigation
 Bundle 'scrooloose/nerdtree'
-Bundle 'markgandolfo/nerdtree-wget.vim'
+Bundle 'markgandolfo/nerdtree-fetch.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
 Bundle 'mileszs/ack.vim'
