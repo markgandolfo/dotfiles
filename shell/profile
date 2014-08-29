@@ -97,3 +97,7 @@ if [ -e "$AUTOJUMP_SCRIPT" ]
 then
   source "$AUTOJUMP_SCRIPT"
 fi
+
+# Set goPath
+export GOPATH=/Users/mark/Programming/go
+export PATH="$PATH:/Users/mark/Programming/go/bin"
