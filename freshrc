@@ -77,7 +77,6 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh vim/vundle_before.vim
   fresh vim/vundle.vim
   fresh vim/vundle_after.vim
-  fresh twe4ked/dotfiles vim/functions.vim
   fresh vim/plugins/\*
   fresh twe4ked/dotfiles vim/vimrc
   fresh jasoncodes/dotfiles vim/mappings/indent.vim
