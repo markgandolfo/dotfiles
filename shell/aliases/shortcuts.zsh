@@ -8,3 +8,6 @@ alias pgstop='pg_ctl -D ~/Programming/@postgres stop'
 # Mysql
 alias mysqlstart='/usr/local/bin/mysqld start'
 alias mysqlstop='/usr/local/bin/mysqld stop'
+
+# Neovim
+alias n='nvim'

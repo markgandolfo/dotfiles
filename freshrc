@@ -88,6 +88,24 @@ fresh-options
 fresh twe4ked/dotfiles vim/gvimrc --file
 fresh vim/colors --file=~/.vim/colors/
 
+# Neo Vim
+fresh-options --file=~/.nvimrc --marker=\"
+  fresh vim/backspace.vim
+  fresh vim/leader.vim
+  fresh vim/vundle_before.vim
+  fresh vim/vundle.vim
+  fresh vim/vundle_after.vim
+  fresh twe4ked/dotfiles vim/functions.vim
+  fresh vim/plugins/\*
+  fresh twe4ked/dotfiles vim/vimrc
+  fresh jasoncodes/dotfiles vim/mappings/indent.vim
+  fresh hackling/dotfiles vim/keybindings/numpad.vim
+  fresh vim/keybindings.vim
+fresh-options
+
+fresh vim/colors --file=~/.nvim/colors/
+
+
 # Shell
 fresh jasoncodes/dotfiles shell/editor.sh
 
