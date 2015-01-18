@@ -6,7 +6,7 @@ let g:NERDTreeIgnore          = ['Icon$']
 let g:NERDTreeWinPos          = 'right'
 let g:NERDTreeMinimalUI       = 1
 let g:NERDTreeDirArrows       = 1
-
+let NERDTreeShowHidden        = 1
 
 map <Leader>d :NERDTreeToggle<CR> :set number<CR>
 map <C-d> :NERDTreeToggle<CR> :set number<CR>

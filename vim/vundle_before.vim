@@ -10,6 +10,6 @@ endif
 set nocompatible
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
-Bundle "gmarik/vundle"
+Plugin "gmarik/vundle"
