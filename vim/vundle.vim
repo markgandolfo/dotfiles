@@ -26,6 +26,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'Shougo/neocomplcache'
 Plugin 'rking/vim-ruby-refactoring'
 Plugin 'bkad/CamelCaseMotion'
+Plugin 'SirVer/ultisnips'
 
 " Navigation
 Plugin 'scrooloose/nerdtree'
