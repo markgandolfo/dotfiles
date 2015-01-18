@@ -8,10 +8,11 @@ Plugin 'tpope/vim-dispatch'
 " Buffers
 Plugin 'Soares/butane.vim'
 Plugin 'bufkill.vim'
+Plugin 'bling/vim-bufferline'
 
 " Visual
 Plugin 'dterei/VimBookmarking'
-Plugin 'Lokaltog/vim-powerline'
+Plugin 'bling/vim-airline'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'amdt/vim-niji'
@@ -61,3 +62,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'bclear'
 Plugin 'noahfrederick/Hemisu'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
