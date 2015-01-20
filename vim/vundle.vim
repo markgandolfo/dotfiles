@@ -28,6 +28,7 @@ Plugin 'Shougo/neocomplcache'
 Plugin 'rking/vim-ruby-refactoring'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " Navigation
 Plugin 'scrooloose/nerdtree'

@@ -1,4 +1,4 @@
-platform='unknown'
+tform='unknown'
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
    platform='Linux'
@@ -25,11 +25,11 @@ fresh-options
 
 # Zsh
 fresh-options --file=~/.zshrc --marker
-  fresh zsh/node.zsh
   fresh shell/aliases/git.zsh
   fresh shell/aliases/shortcuts.zsh
   fresh shell/aliases/heroku.zsh
   fresh shell/aliases/rails.zsh
+  fresh shell/aliases/tmux.zsh
   fresh shell/functions/directory.zsh
   fresh shell/functions/helpers.zsh
   fresh shell/functions/editor.sh
@@ -93,11 +93,9 @@ fresh-options --file=~/.nvimrc --marker=\"
   fresh vim/vundle_before.vim
   fresh vim/vundle.vim
   fresh vim/vundle_after.vim
-  fresh twe4ked/dotfiles vim/functions.vim
   fresh vim/plugins/\*
   fresh twe4ked/dotfiles vim/vimrc
   fresh jasoncodes/dotfiles vim/mappings/indent.vim
-  fresh hackling/dotfiles vim/keybindings/numpad.vim
   fresh vim/keybindings.vim
 fresh-options
 

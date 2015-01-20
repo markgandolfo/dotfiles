@@ -17,6 +17,9 @@ export MAKEFLAGS='-j 3'
 # our own bin dir as the highest priority, followed by /usr/local/bin
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:"$PATH"
 
+# Add NPM
+export PATH=$PATH:/usr/local/share/npm/bin
+
 # history
 export HISTSIZE=100000
 export HISTFILESIZE=100000
