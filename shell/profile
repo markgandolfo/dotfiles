@@ -18,7 +18,7 @@ export MAKEFLAGS='-j 3'
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:"$PATH"
 
 # Add NPM
-export PATH=$PATH:/usr/local/share/npm/bin
+export PATH="$HOME/.node/bin:$PATH"
 
 # history
 export HISTSIZE=100000

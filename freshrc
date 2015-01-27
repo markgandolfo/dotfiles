@@ -1,4 +1,4 @@
-tform='unknown'
+platform='unknown'
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
    platform='Linux'
@@ -30,13 +30,21 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/aliases/heroku.zsh
   fresh shell/aliases/rails.zsh
   fresh shell/aliases/tmux.zsh
+
   fresh shell/functions/directory.zsh
   fresh shell/functions/helpers.zsh
   fresh shell/functions/editor.sh
   fresh shell/functions/rails.sh
+  fresh shell/functions/z.sh
+  fresh shell/functions/zsh-vim-mode.plugin.zsh
+  fresh shell/functions/zsh-history-substring-search.zsh
+
   if [[ $platform == 'mac' ]]; then
      fresh shell/functions/mac.zsh
   fi
+
+  fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh --ref=a38774c
+  fresh robbyrussell/oh-my-zsh plugins/git-flow/git-flow.plugin.zsh --ref=df30eae
 
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
   fresh twe4ked/dotfiles shell/zsh/prompt.zsh
@@ -53,17 +61,11 @@ fresh-options --file=~/.zshrc --marker
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
+  fresh shell/config/npm_export.zsh
 fresh-options
 
 
 fresh zsh-users/zsh-completions src/_ack --file=completion/_ack
-fresh-options --file=~/.zshrc
-  fresh rupa/z z.sh
-  fresh sharat87/zsh-vim-mode zsh-vim-mode.plugin.zsh
-  fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh --ref=a38774c
-  fresh robbyrussell/oh-my-zsh plugins/git-flow/git-flow.plugin.zsh --ref=df30eae
-  fresh zsh-users/zsh-history-substring-search zsh-history-substring-search.zsh
-fresh-options
 
 fresh zsh-users/zsh-syntax-highlighting zsh-syntax-highlighting.zsh --file=vendor/zsh-syntax-highlighting.zsh
 fresh zsh-users/zsh-syntax-highlighting highlighters/main/main-highlighter.zsh --file=vendor/highlighters/main/main-highlighter.zsh

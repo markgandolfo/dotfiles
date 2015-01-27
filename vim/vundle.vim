@@ -36,6 +36,7 @@ Plugin 'markgandolfo/nerdtree-fetch.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'jasoncodes/ctrlp-modified.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'jeetsukumaran/vim-indentwise'
 
 " Language
 Plugin 'digitaltoad/vim-jade'
