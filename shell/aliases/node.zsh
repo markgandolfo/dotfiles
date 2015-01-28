@@ -1,1 +1,1 @@
-alias ni='node install'
+alias ni='npm install'
