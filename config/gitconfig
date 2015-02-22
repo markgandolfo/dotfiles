@@ -1,3 +1,23 @@
+[include]
+  path = .gitconfig.local
+[color]
+  ui = auto
+[core]
+  excludesfile = ~/.gitignore
+[git-up "bundler"]
+  check = true
+[rebase]
+  autosquash = true
+[color "diff"]
+  commit = yellow reverse
+[push]
+  default = tracking
+[merge]
+  log = true
+  conflictstyle = diff3
+  tool = vimdiff
+[mergetool]
+  prompt = false
 [user]
   name = Mark Gandolfo
-  email = mark@aussiev8.com.au
+  email = mark@gandolfo.com.au

@@ -19,7 +19,6 @@ fresh-options
 fresh henrik/dotfiles rubyrc --file=~/.pryrc --filter='cat; echo include RubyRC'
 
 fresh-options --file=~/.gitconfig
-  fresh twe4ked/dotfiles config/gitconfig
   fresh config/gitconfig
 fresh-options
 
