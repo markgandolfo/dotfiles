@@ -12,10 +12,11 @@ fresh freshshell/fresh-open bin/fresh-open --bin
 
 # Config
 fresh-options --file
-  fresh twe4ked/dotfiles config/\*
+  fresh config/\*
   fresh jasoncodes/dotfiles config/inputrc
   fresh config/tmux.conf
 fresh-options
+fresh config/ranger/rc.conf --file=~/.config/ranger/rc.conf
 fresh henrik/dotfiles rubyrc --file=~/.pryrc --filter='cat; echo include RubyRC'
 
 fresh-options --file=~/.gitconfig
@@ -115,9 +116,8 @@ fresh-options
 
 # irb
 fresh-options --file=~/.irbrc
-  fresh twe4ked/dotfiles config/irb/encoding.rb
+  fresh config/irb/encoding.rb
   fresh jasoncodes/dotfiles config/irbrc
-  fresh twe4ked/dotfiles config/irb/prompt.rb
 fresh-options
 
 # bin
