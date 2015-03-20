@@ -29,6 +29,7 @@ Plugin 'rking/vim-ruby-refactoring'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'mattn/emmet-vim'
 
 " Navigation
 Plugin 'scrooloose/nerdtree'
