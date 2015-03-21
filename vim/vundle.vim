@@ -58,6 +58,8 @@ Plugin 'guns/vim-clojure-static'
 " Git
 Plugin 'tpope/vim-fugitive'
 Plugin 'kablamo/vim-git-log'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 
 " Colours
 Plugin 'twe4ked/vim-colorscheme-switcher'
