@@ -7,6 +7,7 @@ let g:NERDTreeWinPos          = 'right'
 let g:NERDTreeMinimalUI       = 1
 let g:NERDTreeDirArrows       = 1
 let NERDTreeShowHidden        = 1
+:let g:NERDTreeWinSize        = 60
 
 map <Leader>d :NERDTreeToggle<CR> :set number<CR>
 map <C-d> :NERDTreeToggle<CR> :set number<CR>
