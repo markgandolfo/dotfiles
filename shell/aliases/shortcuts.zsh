@@ -12,5 +12,8 @@ alias mysqlstop='/usr/local/bin/mysqld stop'
 # Neovim
 alias n='nvim'
 
+# Vim
+alias v='vim'
+
 # Start static server
 alias startserver='python -m SimpleHTTPServer'
