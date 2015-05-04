@@ -63,6 +63,7 @@ fresh-options --file=~/.zshrc --marker
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
   fresh shell/config/npm_export.zsh
+  fresh shell/config/rbenv
 fresh-options
 
 

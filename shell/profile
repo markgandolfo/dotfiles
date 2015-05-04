@@ -100,3 +100,5 @@ if [ -e "$AUTOJUMP_SCRIPT" ]
 then
   source "$AUTOJUMP_SCRIPT"
 fi
+
+eval "$(rbenv init -)"
