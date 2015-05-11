@@ -31,6 +31,7 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/aliases/rails.zsh
   fresh shell/aliases/tmux.zsh
   fresh shell/aliases/node.zsh
+  fresh shell/aliases/hooroo.zsh
 
   fresh shell/functions/directory.zsh
   fresh shell/functions/helpers.zsh
