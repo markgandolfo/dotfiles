@@ -12,10 +12,10 @@ Plugin 'bling/vim-bufferline'
 
 " Visual
 Plugin 'dterei/VimBookmarking'
-Plugin 'bling/vim-airline'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'amdt/vim-niji'
+Plugin 'itchyny/lightline.vim'
 
 " Editing
 Plugin 'godlygeek/tabular'
