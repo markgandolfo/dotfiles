@@ -8,6 +8,9 @@ map <Leader>[ :bprev<CR>
 map <Leader>ls :buffers<CR>
 map <Leader>bd :bd<CR>
 
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
+
 noremap <leader>i :set list!<CR>
 nmap <leader>sss :source $HOME/.vimrc<CR>
 nmap <leader>vvv :tabe $HOME/.vimrc
@@ -19,6 +22,15 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Copy and past to the system buffer
+" <leader>p & <leader>y
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
 " Clear search
 map <silent><Leader>/ :nohls<CR>
 
@@ -29,6 +41,7 @@ map <Leader>f :Ack!<Space>
 nnoremap <leader>h *<C-O>
 " Highlight word at cursor and then Ack it.
 nnoremap <leader>H *<C-O>:AckFromSearch!<CR>
+map <leader>nh :nohlsearch<CR>
 
 map <Leader>F :AckFromSearch<CR>
 

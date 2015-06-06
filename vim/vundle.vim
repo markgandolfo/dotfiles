@@ -14,7 +14,7 @@ Plugin 'bling/vim-bufferline'
 Plugin 'dterei/VimBookmarking'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'itchyny/lightline.vim'
+Plugin 'bling/vim-airline'
 
 " Editing
 Plugin 'godlygeek/tabular'

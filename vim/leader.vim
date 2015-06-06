@@ -1,1 +1,2 @@
-let mapleader = ","
+let mapleader = "\<Space>"
+" let mapleader = ","
