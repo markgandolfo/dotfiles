@@ -33,17 +33,34 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/aliases/node.zsh
   fresh shell/aliases/hooroo.zsh
   fresh shell/config/keybindings.zsh
+
   if [[ $platform == 'Linux' ]]; then
     fresh shell/aliases/linux.zsh
   elif [[ $platform == 'mac' ]]; then
-     fresh shell/aliases/mac.zsh
+    fresh shell/aliases/mac.zsh
+    fresh shell/functions/mac.zsh
   fi
+
+  fresh shell/config/prompt.zsh
+  fresh shell/functions/directory.zsh
+  fresh shell/functions/helpers.zsh
+  fresh shell/functions/editor.sh
+  fresh shell/functions/rails.sh
+  fresh shell/functions/z.sh
+  fresh shell/functions/zsh-vim-mode.plugin.zsh
+  fresh shell/functions/zsh-history-substring-search.zsh
+
+  fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh --ref=a38774c
+  fresh robbyrussell/oh-my-zsh plugins/git-flow/git-flow.plugin.zsh --ref=df30eae
+
+  fresh twe4ked/dotfiles shell/zsh/completion.zsh
+  fresh twe4ked/dotfiles shell/zsh/title.zsh
 
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
   fresh shell/config/npm_export.zsh
-  fresh shell/config/rbenv
+  fresh shell/config/rbenv.zsh
 fresh-options
 
 
@@ -73,6 +90,7 @@ fresh vim/colors --file=~/.vim/colors/
 fresh jasoncodes/dotfiles shell/editor.sh
 
 fresh-options
+  fresh shell/functions/realpath.sh
   fresh shell/exports
 fresh-options
 
