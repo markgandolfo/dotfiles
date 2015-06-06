@@ -49,6 +49,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'jnwhiteh/vim-golang'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'kien/rainbow_parentheses.vim'
 
 " Clojure
 Plugin 'tpope/vim-fireplace'

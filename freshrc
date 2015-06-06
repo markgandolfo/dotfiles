@@ -106,7 +106,6 @@ fresh-options
 
 fresh vim/colors --file=~/.nvim/colors/
 
-
 # Shell
 fresh jasoncodes/dotfiles shell/editor.sh
 
