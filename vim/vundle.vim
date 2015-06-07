@@ -15,6 +15,7 @@ Plugin 'dterei/VimBookmarking'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
+Plugin 'kshenoy/vim-signature'
 
 " Editing
 Plugin 'godlygeek/tabular'
