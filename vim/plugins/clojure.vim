@@ -1,4 +1,4 @@
-function SetClojureOptions()
+function! SetClojureOptions()
   set filetype=clojure
   au VimEnter * RainbowParenthesesToggle
   au Syntax * RainbowParenthesesLoadRound

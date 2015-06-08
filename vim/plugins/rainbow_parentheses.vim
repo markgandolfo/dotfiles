@@ -1,5 +1,5 @@
 let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
+    \ ['white',       'RoyalBlue3'],
     \ ['Darkblue',    'SeaGreen3'],
     \ ['darkgray',    'DarkOrchid3'],
     \ ['darkgreen',   'firebrick3'],
@@ -14,5 +14,9 @@ let g:rbpt_colorpairs = [
     \ ['darkgreen',   'RoyalBlue3'],
     \ ['darkcyan',    'SeaGreen3'],
     \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
+    \ ['red',         'white'],
     \ ]
+
+map !r :RainbowParenthesesActivate<CR> :RainbowParenthesesLoadRound<CR> :RainbowParenthesesLoadBraces<CR> :RainbowParenthesesLoadSquare<CR>
+
+
