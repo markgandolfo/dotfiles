@@ -54,6 +54,12 @@ function prompt_pwd() {
   echo "$prompt_path"
 }
 
+build_status() {
+  current_directory=$(basename $PWD)
+  var=$(cat ~/.buildkite_status.yml | grep \^$current_directory: | awk -F':' '{print $2}')
+  echo -n $var
+}
+
 local git_formats="%{${fg_bold[yellow]}%}± %b%c%u:%.7i%{${reset_color}%}"
 zstyle ':vcs_info:git*' enable git
 zstyle ':vcs_info:git*' check-for-changes true
@@ -65,6 +71,7 @@ zstyle ':vcs_info:git*' actionformats "%a $git_formats"
 
 precmd() {
   vcs_info
+  build_status
 }
 
 zle-keymap-select() { zle reset-prompt; }
@@ -82,6 +89,7 @@ local git='${vcs_info_msg_0_}$(git_stash) '
 local git_author='$(git author > /dev/null || echo "$(git author) ")'
 local vi_mode='$(which vi_mode_prompt_info &> /dev/null && vi_mode_prompt_info) '
 local bg_job='%{${fg_bold[black]}%}$(prompt_bg_job)%{${reset_color}%} '
+local ci_build='%{$(build_status)%} '
 
 PROMPT=$cwd$usr$char
 RPROMPT=$vi_mode$bg_job$git_author$git
