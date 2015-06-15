@@ -22,14 +22,15 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+noremap K 5k
+noremap J 5j
+
 " Copy and past to the system buffer
 " <leader>p & <leader>y
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
 
 " Clear search
 map <silent><Leader>/ :nohls<CR>
@@ -47,9 +48,6 @@ map <Leader>F :AckFromSearch<CR>
 
 " Yank from the cursor to the end of the line, to be consistent with C and D
 nnoremap Y y$
-
-" I never intentionally lookup keywords (with `man`)
-nmap K <Esc>
 
 " I don't like <c-r>
 map U :redo<CR>
