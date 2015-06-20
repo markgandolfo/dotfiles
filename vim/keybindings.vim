@@ -25,6 +25,9 @@ map <C-l> <C-w>l
 noremap K 5k
 noremap J 5j
 
+" remap join to something else
+noremap <Leader>j :join!<CR>
+
 " Copy and past to the system buffer
 " <leader>p & <leader>y
 vmap <Leader>y "+y
@@ -32,11 +35,12 @@ vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
 
+" Copy the current file to the global register
+nmap <Leader>fn :let @*=expand("%")<CR>
+nmap <Leader>fp :let @*=expand("%:p")<CR>
+
 " Clear search
 map <silent><Leader>/ :nohls<CR>
-
-" Ack with <leader>f
-map <Leader>f :Ack!<Space>
 
 " Highlight word at cursor without changing position
 nnoremap <leader>h *<C-O>
