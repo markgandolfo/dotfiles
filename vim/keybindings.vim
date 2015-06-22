@@ -28,7 +28,6 @@ noremap J 5j
 " remap join to something else
 noremap <Leader>j :join!<CR>
 
->>>>>>> Stashed changes
 " Copy and past to the system buffer
 " <leader>p & <leader>y
 vmap <Leader>y "+y
