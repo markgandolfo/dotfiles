@@ -28,6 +28,7 @@ noremap J 5j
 " remap join to something else
 noremap <Leader>j :join!<CR>
 
+>>>>>>> Stashed changes
 " Copy and past to the system buffer
 " <leader>p & <leader>y
 vmap <Leader>y "+y
@@ -58,7 +59,6 @@ map U :redo<CR>
 
 " Marked (markdown preview)
 command! Marked silent !open -a "Marked.app" "%:p"
-nmap <C-p> :Marked<CR>
 
 " Jump to start and end of line using the home row keys
 noremap H ^
