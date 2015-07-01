@@ -33,6 +33,7 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/aliases/node.zsh
   fresh shell/aliases/hooroo.zsh
   fresh shell/config/keybindings.zsh
+  fresh shell/config/go.zsh
 
   if [[ $platform == 'Linux' ]]; then
     fresh shell/aliases/linux.zsh
