@@ -84,11 +84,6 @@ function first_file_match()
 # finish off the prompt
 export PS1="$PS1"'\[\033[00m\]\$ '
 
-# initialise rbenv
-if [[ -x "`which rbenv`" ]]; then
-  eval "$(rbenv init - --no-rehash)"
-fi
-
 # initialize Heroku Toolbelt
 if [[ -d "/usr/local/heroku/bin" ]]; then
   export PATH="/usr/local/heroku/bin:$PATH"
@@ -101,4 +96,3 @@ then
   source "$AUTOJUMP_SCRIPT"
 fi
 
-eval "$(rbenv init -)"

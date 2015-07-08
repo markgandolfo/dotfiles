@@ -17,3 +17,6 @@ alias v='vim'
 
 # Start static server
 alias startserver='python -m SimpleHTTPServer'
+
+# Helpers
+alias ppjson="ruby -r json -e 'jj JSON.parse gets'"
