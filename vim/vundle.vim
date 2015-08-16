@@ -51,7 +51,7 @@ Plugin 'fatih/vim-go'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin '/slim-template/vim-slim'
+Plugin 'slim-template/vim-slim'
 
 " Clojure
 Plugin 'tpope/vim-fireplace'
