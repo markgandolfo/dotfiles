@@ -16,6 +16,7 @@ set laststatus=2                            " Always show the status line
 set history=1000
 set autoread
 set cursorline
+set cursorcolumn                            " Set the cursor highlight
 set backspace=indent,eol,start              " Make backspace behave rationally
 set lazyredraw
 
