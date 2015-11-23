@@ -30,6 +30,7 @@ alias gp='git push'
 alias gpt='git push -u origin $(git_current_branch)'
 alias gws='git wip save WIP --untracked'
 alias gwd='git update-ref -d refs/wip/$(git_current_branch)'
+alias gac='git add .; git commit -a'
 
 # helper for git aliases
 function git_current_branch()

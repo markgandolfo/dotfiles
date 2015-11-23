@@ -1,4 +1,4 @@
 alias be='bundle exec'
-alias becd='bundle exec cap deploy'
+alias becpd='bundle exec cap production deploy'
 alias fs='foreman start'
 alias rake='noglob rake'
