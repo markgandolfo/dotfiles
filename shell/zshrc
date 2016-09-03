@@ -11,7 +11,7 @@ setopt hist_expire_dups_first       # remove oldest duplicate commands from the 
 setopt hist_ignore_space            # don't save commands beginning with spaces to history
 setopt extended_history             # save beginning time and elapsed time before commands in history
 setopt append_history               # append to the end of the history file
-#setopt inc_append_history           # always be saving history (not just when the shell exits)
+setopt inc_append_history           # always be saving history (not just when the shell exits)
 setopt magic_equal_subst            # all unquoted arguments of the form identifier=expression appearing after the command name have file expansion
 setopt auto_menu                    # show completion menu on succesive tab press
 setopt auto_pushd                   # make cd push the old directory onto the directory stack
