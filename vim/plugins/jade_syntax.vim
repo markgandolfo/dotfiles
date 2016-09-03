@@ -1,1 +1,0 @@
-au BufNewFile,BufRead *.jade setlocal ft=jade

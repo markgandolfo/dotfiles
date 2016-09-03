@@ -2,11 +2,12 @@ map <Leader>sd :FixWhitespace<CR>:wall<CR>
 map <Leader>r :checktime<CR>:wall<CR>
 
 " Buffer navigation
-map <Leader>, <C-^>
-map <Leader>] :bnext<CR>
-map <Leader>[ :bprev<CR>
-map <Leader>ls :buffers<CR>
-map <Leader>bd :bd<CR>
+noremap <Leader>, <C-^>
+noremap <Leader>] :bnext<CR>
+noremap <Leader>[ :bprev<CR>
+noremap <leader>bt :b#<CR>          " Toggle to most recently used buffer.
+noremap <Leader>bl :buffers<CR>
+noremap <Leader>BD :bd<CR>
 
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>

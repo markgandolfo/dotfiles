@@ -1,3 +1,5 @@
+Plugin 'kien/rainbow_parentheses.vim'
+
 let g:rbpt_colorpairs = [
     \ ['white',       'RoyalBlue3'],
     \ ['Darkblue',    'SeaGreen3'],

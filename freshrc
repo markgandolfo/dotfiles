@@ -88,7 +88,7 @@ fresh-options
 fresh vim/colors --file=~/.vim/colors/
 
 # nVim
-fresh-options --file=~/.nvimrc --marker=\"
+fresh-options --file=~/.config/nvim/init.vim --marker=\"
   fresh vim/backspace.vim
   fresh vim/leader.vim
   fresh vim/vundle_before.vim
@@ -100,7 +100,7 @@ fresh-options --file=~/.nvimrc --marker=\"
   fresh vim/keybindings.vim
 fresh-options
 
-fresh vim/colors --file=~/.nvim/colors/
+fresh vim/colors --file=~/.config/nvim/colors/
 
 # Shell
 fresh jasoncodes/dotfiles shell/editor.sh

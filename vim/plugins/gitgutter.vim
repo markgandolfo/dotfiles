@@ -1,3 +1,5 @@
+Plugin 'airblade/vim-gitgutter'
+
 nmap ]d <Plug>GitGutterNextHunk
 nmap [d <Plug>GitGutterPrevHunk
 

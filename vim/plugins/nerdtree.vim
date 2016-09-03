@@ -1,3 +1,5 @@
+Plugin 'scrooloose/nerdtree'
+
 let g:NERDTreeShowLineNumbers = 0
 let g:NERDTreeHijackNetrw     = 0
 let g:loaded_netrw            = 1 " Disable netrw
