@@ -2,8 +2,8 @@
 alias mongodbstart='mongod --dbpath /data/db/'
 
 # Postgres
-alias pgstart='pg_ctl -D ~/Programming/@postgres94 -l ~/Programming/@postgres94/logs/server.log start &'
-alias pgstop='pg_ctl -D ~/Programming/@postgres94 stop'
+alias pgstart='pg_ctl -D /usr/local/var/postgres/ start &'
+alias pgstop='pg_ctl -D /usr/local/var/postgres/ stop'
 
 # Mysql
 alias mysqlstart='/usr/local/bin/mysqld start'
