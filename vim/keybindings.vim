@@ -18,10 +18,10 @@ nmap <leader>vvv :tabe $HOME/.vimrc
 
 " Window Navigation
 " Use ctrl+(h|j|k|j) to move through open windows.
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
 
 noremap K 5k
 noremap J 5j
