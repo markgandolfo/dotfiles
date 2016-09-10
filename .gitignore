@@ -4,6 +4,7 @@
 Icon?
 .DS_Store
 .dropbox
+tags
 
 emacs.d/elpa/*
 emacs.d/elpa/archives/**
