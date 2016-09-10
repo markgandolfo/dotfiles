@@ -5,7 +5,6 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-surround'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'mattn/emmet-vim'
 
 " Navigation
 Plugin 'mileszs/ack.vim'
