@@ -1,6 +1,3 @@
-# Mongo DB
-alias mongodbstart='mongod --dbpath /data/db/'
-
 # Postgres
 alias pgstart='pg_ctl -D /usr/local/var/postgres/ start &'
 alias pgstop='pg_ctl -D /usr/local/var/postgres/ stop'
@@ -11,9 +8,7 @@ alias mysqlstop='/usr/local/bin/mysqld stop'
 
 # Neovim
 alias n='nvim'
-
-# Vim
-alias v='vim'
+alias v='nvim'
 
 # Start static server
 alias startserver='python -m SimpleHTTPServer'

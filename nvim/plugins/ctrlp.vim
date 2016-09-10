@@ -1,5 +1,5 @@
-Plugin 'kien/ctrlp.vim'
-Plugin 'jasoncodes/ctrlp-modified.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'jasoncodes/ctrlp-modified.vim'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 

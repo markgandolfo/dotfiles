@@ -1,5 +1,5 @@
-Plugin 'bling/vim-airline'
-Plugin 'bling/vim-bufferline'
+Plug 'bling/vim-airline'
+Plug 'bling/vim-bufferline'
 
 let g:airline_theme='wombat'
 let g:airline_left_sep=''

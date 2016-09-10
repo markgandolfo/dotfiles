@@ -72,35 +72,19 @@ fresh zsh-users/zsh-syntax-highlighting highlighters/main/main-highlighter.zsh -
 fresh zsh-users/zsh-syntax-highlighting highlighters/brackets/brackets-highlighter.zsh --file=vendor/highlighters/brackets/brackets-highlighter.zsh
 fresh twe4ked/dotfiles shell/zsh/zsh-syntax-highlighting.zsh
 
-# Vim
-fresh-options --file=~/.vimrc --marker=\"
-  fresh vim/backspace.vim
-  fresh vim/leader.vim
-  fresh vim/vundle_before.vim
-  fresh vim/vundle.vim
-  fresh vim/vundle_after.vim
-  fresh vim/plugins/\*
-  fresh vim/vimrc
-  fresh jasoncodes/dotfiles vim/mappings/indent.vim
-  fresh vim/keybindings.vim
-fresh-options
-
-fresh vim/colors --file=~/.vim/colors/
-
 # nVim
 fresh-options --file=~/.config/nvim/init.vim --marker=\"
-  fresh vim/backspace.vim
-  fresh vim/leader.vim
-  fresh vim/vundle_before.vim
-  fresh vim/vundle.vim
-  fresh vim/vundle_after.vim
-  fresh vim/plugins/\*
-  fresh vim/vimrc
+  fresh nvim/backspace.vim
+  fresh nvim/leader.vim
+  fresh nvim/plug_before.vim
+  fresh nvim/plugins/\*
+  fresh nvim/plug.vim
+  fresh nvim/vimrc
   fresh jasoncodes/dotfiles vim/mappings/indent.vim
-  fresh vim/keybindings.vim
+  fresh nvim/keybindings.vim
 fresh-options
 
-fresh vim/colors --file=~/.config/nvim/colors/
+fresh nvim/colors --file=~/.config/nvim/colors/
 
 # Shell
 fresh jasoncodes/dotfiles shell/editor.sh
