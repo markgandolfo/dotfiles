@@ -3,6 +3,5 @@ alias ebq='rake email_eyeball:all\[mark.gandolfo@hooroo.com\] source=qantas | lo
 alias ebjiml='rake email_eyeball:international_multileg\[mark.gandolfo@hooroo.com\] source=jetstar'
 alias ebqiml='rake email_eyeball:international_multileg\[mark.gandolfo@hooroo.com\] source=qantas'
 
-
 alias ts='bundle exec togglr states'
 
