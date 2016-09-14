@@ -26,6 +26,7 @@ fresh-options
 # Zsh
 fresh-options --file=~/.zshrc --marker
   fresh shell/zshrc
+  fresh shell/exports
   fresh shell/aliases/git.zsh
   fresh shell/aliases/shortcuts.zsh
   fresh shell/aliases/heroku.zsh
