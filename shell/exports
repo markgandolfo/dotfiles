@@ -4,7 +4,6 @@ export GREP_OPTIONS='--color=auto'          # double rainbow!
 export PATH=$HOME/bin:/usr/local/bin:$PATH  # path settings
 export GH_LOGIN=markgandolfo                # used by git-go
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 export EDITOR=nvim
 
 path_add() {
