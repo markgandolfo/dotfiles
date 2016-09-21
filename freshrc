@@ -53,6 +53,7 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/functions/z.sh
   fresh shell/functions/zsh-vim-mode.plugin.zsh
   fresh shell/functions/zsh-history-substring-search.zsh
+  fresh shell/functions/hooroo.zsh
 
   fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh --ref=a38774c
   fresh robbyrussell/oh-my-zsh plugins/git-flow/git-flow.plugin.zsh --ref=df30eae
