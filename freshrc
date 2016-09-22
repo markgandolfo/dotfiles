@@ -26,6 +26,7 @@ fresh-options
 # Zsh
 fresh-options --file=~/.zshrc --marker
   fresh shell/zshrc
+  fresh shell/functions/realpath.sh
   fresh shell/exports
   fresh shell/aliases/git.zsh
   fresh shell/aliases/shortcuts.zsh
@@ -92,11 +93,6 @@ fresh nvim/colors --file=~/.config/nvim/colors/
 
 # Shell
 fresh jasoncodes/dotfiles shell/editor.sh
-
-fresh-options
-  fresh shell/functions/realpath.sh
-  fresh shell/exports
-fresh-options
 
 # irb
 fresh-options --file=~/.irbrc
