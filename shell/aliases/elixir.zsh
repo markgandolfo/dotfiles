@@ -1,3 +1,4 @@
+alias el='elixir'
 alias i='iex'
 alias ips='iex -S mix phoenix.server'
 alias ism='iex -S mix'
