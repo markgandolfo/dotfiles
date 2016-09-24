@@ -45,10 +45,7 @@ set t_ti= t_te=
 
 let g:is_posix = 1                          " Better highlighting of shell files
 
-filetype plugin indent on                   " Enable automatic filetype detection, filetype-specific plugins/indentation
-
 " Colorscheme
-syntax enable
 set background=dark
 colorscheme jellybeans_custom
 

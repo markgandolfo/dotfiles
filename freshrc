@@ -85,7 +85,6 @@ fresh-options --file=~/.config/nvim/init.vim --marker=\"
   fresh nvim/plugins/\*
   fresh nvim/plug.vim
   fresh nvim/vimrc
-  fresh jasoncodes/dotfiles vim/mappings/indent.vim
   fresh nvim/keybindings.vim
 fresh-options
 
