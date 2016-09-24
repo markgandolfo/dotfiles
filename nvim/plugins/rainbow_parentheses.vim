@@ -1,24 +1,8 @@
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
 
-let g:rbpt_colorpairs = [
-    \ ['white',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['darkred',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'white'],
-    \ ]
+augroup rainbow_lisp
+  autocmd!
+  autocmd FileType clojure,eelixir RainbowParentheses
+augroup END
 
-map !r :RainbowParenthesesActivate<CR> :RainbowParenthesesLoadRound<CR> :RainbowParenthesesLoadBraces<CR> :RainbowParenthesesLoadSquare<CR>
-
-
+let g:rainbow#pairs = [['(', ')'], ['[', ']']]
