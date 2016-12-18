@@ -39,7 +39,6 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/aliases/elixir.zsh
   fresh shell/config/keybindings.zsh
   fresh shell/config/go.zsh
-  fresh shell/config/rbenv.zsh
 
   if [[ $platform == 'Linux' ]]; then
     fresh shell/aliases/linux.zsh
@@ -68,6 +67,8 @@ fresh-options --file=~/.zshrc --marker
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
   fresh shell/config/npm_export.zsh
+
+  fresh shell/config/rbenv.zsh
 fresh-options
 
 
