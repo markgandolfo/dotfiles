@@ -1,4 +1,6 @@
 alias be='bundle exec'
 alias becpd='bundle exec cap production deploy'
 alias fs='foreman start'
-alias rake='noglob rake'
+alias rs='rails server'
+alias rc='rails console'
+# alias rake='noglob rake'
