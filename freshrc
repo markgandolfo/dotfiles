@@ -24,6 +24,46 @@ fresh-options --file=~/.gitconfig
   fresh config/gitconfig
 fresh-options
 
+fresh zsh-users/zsh-completions src/_ack --file=completion/_ack
+
+fresh zsh-users/zsh-syntax-highlighting zsh-syntax-highlighting.zsh --file=vendor/zsh-syntax-highlighting.zsh
+fresh zsh-users/zsh-syntax-highlighting highlighters/main/main-highlighter.zsh --file=vendor/highlighters/main/main-highlighter.zsh
+fresh zsh-users/zsh-syntax-highlighting highlighters/brackets/brackets-highlighter.zsh --file=vendor/highlighters/brackets/brackets-highlighter.zsh
+fresh twe4ked/dotfiles shell/zsh/zsh-syntax-highlighting.zsh
+
+# nVim
+fresh-options --file=~/.config/nvim/init.vim --marker=\"
+  fresh nvim/backspace.vim
+  fresh nvim/leader.vim
+  fresh nvim/plug_before.vim
+  fresh nvim/plugins/\*
+  fresh nvim/plug.vim
+  fresh nvim/vimrc
+  fresh nvim/keybindings.vim
+fresh-options
+
+fresh nvim/colors --file=~/.config/nvim/colors/
+
+# Shell
+fresh jasoncodes/dotfiles shell/editor.sh
+
+# irb
+fresh-options --file=~/.irbrc
+  fresh config/irb/encoding.rb
+  fresh jasoncodes/dotfiles config/irbrc
+fresh-options
+
+# bin
+fresh-options --bin
+  fresh twe4ked/dotfiles bin/\*
+  fresh jasoncodes/dotfiles bin/\*
+  fresh defunkt/repl bin/repl
+  # fresh bin/\*
+fresh-options
+
+# iTerm2
+# fresh iterm2 --file=~/.iterm2/
+
 # Zsh
 fresh-options --file=~/.zshrc --marker
   fresh shell/zshrc
@@ -72,47 +112,8 @@ fresh-options --file=~/.zshrc --marker
 fresh-options
 
 
-fresh zsh-users/zsh-completions src/_ack --file=completion/_ack
-
-fresh zsh-users/zsh-syntax-highlighting zsh-syntax-highlighting.zsh --file=vendor/zsh-syntax-highlighting.zsh
-fresh zsh-users/zsh-syntax-highlighting highlighters/main/main-highlighter.zsh --file=vendor/highlighters/main/main-highlighter.zsh
-fresh zsh-users/zsh-syntax-highlighting highlighters/brackets/brackets-highlighter.zsh --file=vendor/highlighters/brackets/brackets-highlighter.zsh
-fresh twe4ked/dotfiles shell/zsh/zsh-syntax-highlighting.zsh
-
-# nVim
-fresh-options --file=~/.config/nvim/init.vim --marker=\"
-  fresh nvim/backspace.vim
-  fresh nvim/leader.vim
-  fresh nvim/plug_before.vim
-  fresh nvim/plugins/\*
-  fresh nvim/plug.vim
-  fresh nvim/vimrc
-  fresh nvim/keybindings.vim
-fresh-options
-
-fresh nvim/colors --file=~/.config/nvim/colors/
-
-# Shell
-fresh jasoncodes/dotfiles shell/editor.sh
-
-# irb
-fresh-options --file=~/.irbrc
-  fresh config/irb/encoding.rb
-  fresh jasoncodes/dotfiles config/irbrc
-fresh-options
-
-# bin
-fresh-options --bin
-  fresh twe4ked/dotfiles bin/\*
-  fresh jasoncodes/dotfiles bin/\*
-  fresh defunkt/repl bin/repl
-  # fresh bin/\*
-fresh-options
-
-# iTerm2
-# fresh iterm2 --file=~/.iterm2/
-
 # Some mac defaults to make life nicer
 if [[ $platform == 'mac' ]]; then
   defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 fi
+
