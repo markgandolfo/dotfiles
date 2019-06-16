@@ -8,7 +8,7 @@ setopt no_auto_name_dirs            # see: http://www.neactar.com/shell/fix-for-
 setopt hist_ignore_dups             # ignore duplication command history list
 setopt hist_verify                  # expand history onto the current line instead of executing it
 setopt hist_expire_dups_first       # remove oldest duplicate commands from the history first
-setopt hist_ignore_space            # don't save commands beginning with spaces to history
+setopt hist_ignore_space            # dont save commands beginning with spaces to history
 setopt extended_history             # save beginning time and elapsed time before commands in history
 setopt append_history               # append to the end of the history file
 setopt inc_append_history           # always be saving history (not just when the shell exits)

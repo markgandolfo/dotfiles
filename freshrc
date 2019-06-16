@@ -64,10 +64,17 @@ fresh-options
 # iTerm2
 # fresh iterm2 --file=~/.iterm2/
 
+# Sandboxd
+fresh-options --file=~/.sandboxrc --marker
+  fresh shell/sandboxd/nvm.zsh
+  fresh shell/sandboxd/rbenv.zsh
+fresh-options
+
 # Zsh
 fresh-options --file=~/.zshrc --marker
   fresh shell/zshrc
   fresh shell/functions/realpath.sh
+  fresh shell/functions/sandboxd.sh
   fresh shell/exports
   fresh shell/aliases/git.zsh
   fresh shell/aliases/shortcuts.zsh
@@ -75,7 +82,6 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/aliases/rails.zsh
   fresh shell/aliases/tmux.zsh
   fresh shell/aliases/node.zsh
-  fresh shell/aliases/hooroo.zsh
   fresh shell/aliases/elixir.zsh
   fresh shell/config/keybindings.zsh
   fresh shell/config/go.zsh
@@ -84,7 +90,6 @@ fresh-options --file=~/.zshrc --marker
     fresh shell/aliases/linux.zsh
   elif [[ $platform == 'mac' ]]; then
     fresh shell/aliases/mac.zsh
-    fresh shell/functions/mac.zsh
   fi
 
   fresh shell/config/prompt.zsh
@@ -95,7 +100,6 @@ fresh-options --file=~/.zshrc --marker
   fresh shell/functions/z.sh
   fresh shell/functions/zsh-vim-mode.plugin.zsh
   fresh shell/functions/zsh-history-substring-search.zsh
-  fresh shell/functions/hooroo.zsh
 
   fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh --ref=a38774c
   fresh robbyrussell/oh-my-zsh plugins/git-flow/git-flow.plugin.zsh --ref=df30eae
@@ -106,8 +110,6 @@ fresh-options --file=~/.zshrc --marker
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
-  fresh shell/config/npm_export.zsh
-
   fresh shell/config/rbenv.zsh
 fresh-options
 

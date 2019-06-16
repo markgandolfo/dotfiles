@@ -3,12 +3,10 @@ export ARCHFLAGS='-arch x86_64'             # archflags
 export GREP_OPTIONS='--color=auto'          # double rainbow!
 export PATH=$HOME/bin:/usr/local/bin:$PATH  # path settings
 export GH_LOGIN=markgandolfo                # used by git-go
-export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 export EDITOR=nvim
 export CC=/usr/bin/gcc
-
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
+export NVM_DIR=$HOME/.nvm
 
 path_add() {
   if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
@@ -17,7 +15,7 @@ path_add() {
 }
 
 path_add "/usr/local/sbin"
-path_add "/usr/local/share/npm/bin"
+#path_add "/usr/local/share/npm/bin"
 
 if type go >/dev/null 2>&1; then
   export GOPATH="$(realpath `which go` | sed "s/\/libexec\/bin\/go//")"
