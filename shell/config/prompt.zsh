@@ -54,11 +54,6 @@ function prompt_pwd() {
   echo "$prompt_path"
 }
 
-# build_status() {
-#   current_directory=$(basename $PWD)
-#   awk -F: "/^$current_directory:/ {print \$2}" ~/.buildkite_status.yml | tr -d '\n'
-# }
-
 local git_formats="%{${fg_bold[yellow]}%}± %b%c%u:%.7i%{${reset_color}%}"
 zstyle ':vcs_info:git*' enable git
 zstyle ':vcs_info:git*' check-for-changes true
@@ -70,7 +65,6 @@ zstyle ':vcs_info:git*' actionformats "%a $git_formats"
 
 precmd() {
   vcs_info
-  # build_status
 }
 
 zle-keymap-select() { zle reset-prompt; }
