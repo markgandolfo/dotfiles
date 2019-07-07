@@ -5,4 +5,6 @@ sandbox_init_nvm(){
 # create hooks for commands 'nvm', 'node' and 'nodemon'
 sandbox_hook nvm node
 sandbox_hook nvm nodemon
+sandbox_hook nvm npm
+sandbox_hook nvm yarn
 
