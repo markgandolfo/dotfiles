@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[user]
+	email = mark@gandolfo.com.au
+	name = Mark
+[init]
+	defaultBranch = main
