@@ -16,7 +16,8 @@ git clone https://github.com/markgandolfo/dotfiles.git ~/.config/dotfiles
 
 ### 2. Before you run
 
-Before running the initialisation script (`init.sh`), ensure you have the following applications installed:
+Before running the initialisation script (`init.py`), ensure you have the following applications installed:
+- [Python 3](https://www.python.org/) (required for the script -- but who doesn't have python preinstalled?)
 - [Zsh](https://www.zsh.org/)
 - [Alacritty](https://github.com/alacritty/alacritty/)
 - [Oxker](https://github.com/mrjackwills/oxker)
@@ -26,14 +27,14 @@ Before running the initialisation script (`init.sh`), ensure you have the follow
 
 ```bash
 cd ~/.config/dotfiles
-./init.sh
+./init.py
 ```
 
 ## What does init.sh do?
 
 The initialization script:
 
-1. Creates symbolic links from the configuration directories to their appropriate locations in `~/.config/`
+1. Creates symbolic links from the configuration directories to their appropriate locations in `~/.config/` exceot for /home_dir/ which symlinks all files to the home directory
 2. Adds a source line to your `.zshrc` file to load additional zsh configurations
 3. Preserves any existing configurations by showing warnings instead of overwriting
 
@@ -41,11 +42,11 @@ The initialization script:
 
 ```
 ~/.config/dotfiles/
-├── init.sh            # Initialization script
+├── init.py            # Initialization script
+├── home_dir/          # Symlinks all files to ~
 ├── zsh/               # ZSH configuration files
 │   ├── mark.zsh       # entry point for ./zshrc to source
 │   ├── exports.zsh
-│   ├── paths.zsh
 │   └── alias.zsh
 ├── oxker/             # Oxker configuration
 ├── alacritty/         # Alacritty terminal configuration
@@ -71,7 +72,7 @@ To update your dotfiles with the latest changes from the repository:
 ```bash
 cd ~/.config/dotfiles
 git pull
-./init.sh
+./init.py
 ```
 
 ## License
