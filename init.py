@@ -21,8 +21,9 @@ if home_files_path.exists() and home_files_path.is_dir():
 config_dir = home_dir / ".config"
 config_dir.mkdir(exist_ok=True)
 
+ignore_dirs = ["home", ".git"]
 for item in current_dir.iterdir():
-    if not item.is_dir() or item.name == "home":
+    if not item.is_dir() or item.name in ignore_dirs:
         continue
 
     target = config_dir / item.name
