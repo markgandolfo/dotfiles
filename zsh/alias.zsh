@@ -46,6 +46,7 @@ alias gac='git add .; git commit -a'
 
 
 ## some ruby stuff
+alias rs="rails server"
 alias rc="rails console"
 alias rdbm="rails db:migrate"
 alias berc="bundle exec rubocop"
