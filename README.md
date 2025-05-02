@@ -34,7 +34,7 @@ cd ~/.config/dotfiles
 
 The initialization script:
 
-1. Creates symbolic links from the configuration directories to their appropriate locations in `~/.config/` exceot for /home_dir/ which symlinks all files to the home directory
+1. Creates symbolic links from the configuration directories to their appropriate locations in `~/.config/` except for /home_dir/ which symlinks all files to the home directory, and the `/script` directory which is used for manually run scripts
 2. Adds a source line to your `.zshrc` file to load additional zsh configurations
 3. Preserves any existing configurations by showing warnings instead of overwriting
 
@@ -43,6 +43,7 @@ The initialization script:
 ```
 ~/.config/dotfiles/
 ├── init.py            # Initialization script
+├── scripts/           # Not processed by init.py, but instead just some helpers scripts like "install neovim"
 ├── home_dir/          # Symlinks all files to ~
 ├── zsh/               # ZSH configuration files
 │   ├── mark.zsh       # entry point for ./zshrc to source
