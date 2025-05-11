@@ -32,7 +32,7 @@ cd ~/.config/dotfiles
 
 ## What does init.sh do?
 
-The initialization script:
+The initialisation script:
 
 1. Creates symbolic links from the configuration directories to their appropriate locations in `~/.config/` except for /home_dir/ which symlinks all files to the home directory, and the `/script` directory which is used for manually run scripts
 2. Adds a source line to your `.zshrc` file to load additional zsh configurations
@@ -43,15 +43,20 @@ The initialization script:
 ```
 ~/.config/dotfiles/
 ├── init.py            # Initialization script
-├── scripts/           # Not processed by init.py, but instead just some helpers scripts like "install neovim"
-├── home_dir/          # Symlinks all files to ~
+├── _scripts/          # Not processed by init.py -- helper scripts for installs, etc.
+├── _macosx/           # macOS specific stuff, just alacritty applescript for now
+├── home/              # Symlinks all files to ~
 ├── zsh/               # ZSH configuration files
 │   ├── mark.zsh       # entry point for ./zshrc to source
 │   ├── exports.zsh
 │   └── alias.zsh
-├── oxker/             # Oxker configuration
-├── alacritty/         # Alacritty terminal configuration
-└── ...                # Other tool configurations
+├── config             # Everything in here will be symlinked to ~/.config
+│   ├── alacritty
+│   ├── gitui
+│   ├── oxker
+│   ├── spotify-player
+│   └── zellij
+└── ...
 ```
 
 ## Adding New Configurations

@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 import os
-import platform
 from pathlib import Path
 
 # Get current directory and home directory
 current_dir = Path.cwd()
 home_dir = Path.home()
-is_mac = platform.system() == "Darwin"
 
 # Handle files in home_dir directly to home directory
 home_files_path = current_dir / "home"
@@ -19,25 +17,23 @@ if home_files_path.exists() and home_files_path.is_dir():
             print(f"Creating symlink: {target} -> {item}")
             os.symlink(item, target)
 
-# Handle other directories to ~/.config/ (skipping home_dir)
-config_dir = home_dir / ".config"
-config_dir.mkdir(exist_ok=True)
+# make ~/.config directory if it doesn't exist
+destination_config_dir = home_dir / ".config"
+destination_config_dir.mkdir(exist_ok=True)
 
-ignore_dirs = ["home", ".git", "scripts", "macosx"]
-for item in current_dir.iterdir():
-    if not item.is_dir() or item.name in ignore_dirs:
-        continue
-
-    target = config_dir / item.name
+# symlink config files to ~/.config directory
+source_config_dir = current_dir / "config"
+for item in source_config_dir.iterdir():
+    target = destination_config_dir / item.name
     if target.exists():
         print(f"NOTE: {target} already exists. Skipping.")
     else:
         print(f"Creating symlink: {target} -> {item}")
         os.symlink(item, target)
 
-# Check if ~/.config/zsh/mark.zsh exists in ~/.zshrc
+# Check if ~/.config/dotfiles/zsh/mark.zsh exists in ~/.zshrc
 zshrc_path = home_dir / ".zshrc"
-source_line = "source ~/.config/zsh/mark.zsh"
+source_line = "source ~/.config/dotfiles/zsh/mark.zsh"
 
 if zshrc_path.exists():
     with open(zshrc_path, "r") as f:
