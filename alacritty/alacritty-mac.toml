@@ -1,0 +1,30 @@
+general.import = [
+    "~/.config/alacritty/themes/tokyo_night.toml",
+]
+
+[font]
+size = 12
+normal = { family = "Monofur Nerd Font", style = "Regular" }
+bold = { family = "Monofur Nerd Font", style = "Bold" }
+italic = { family = "Monofur Nerd Font", style = "Italic" }
+
+
+[colors.normal]
+
+[terminal.shell]
+program = "/Users/gandom/.cargo/bin/zellij"
+
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 16
+padding.y = 14
+decorations = "Buttonless"
+opacity = 0.97
+
+[keyboard]
+bindings = [
+    { key = "F11", action = "ToggleFullscreen" }
+]

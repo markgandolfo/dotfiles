@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 import os
+import platform
 from pathlib import Path
 
 # Get current directory and home directory
 current_dir = Path.cwd()
 home_dir = Path.home()
+is_mac = platform.system() == "Darwin"
 
 # Handle files in home_dir directly to home directory
 home_files_path = current_dir / "home"
@@ -21,7 +23,7 @@ if home_files_path.exists() and home_files_path.is_dir():
 config_dir = home_dir / ".config"
 config_dir.mkdir(exist_ok=True)
 
-ignore_dirs = ["home", ".git", "scripts"]
+ignore_dirs = ["home", ".git", "scripts", "macosx"]
 for item in current_dir.iterdir():
     if not item.is_dir() or item.name in ignore_dirs:
         continue
@@ -47,3 +49,4 @@ if zshrc_path.exists():
         print("Added source line to ~/.zshrc")
     else:
         print("Source line already exists in ~/.zshrc")
+
