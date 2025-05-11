@@ -4,12 +4,14 @@ alias v='nvim'
 
 alias sapt='sudo apt'
 
+# python
 alias python='python3'
 alias py='python3'
 alias pip='pip3'
 alias pyenv='python3 -m venv .venv'
 alias pyact='source .venv/bin/activate'
 
+# git
 alias gci='git commit --interactive'
 alias gdo='git diff origin'
 alias gl='glg $(git show-ref | cut -d " " -f 2 | grep -v stash$) HEAD'
@@ -44,6 +46,9 @@ alias gws='git wip save WIP --untracked'
 alias gwd='git update-ref -d refs/wip/$(git_current_branch)'
 alias gac='git add .; git commit -a'
 
+## some node stuff
+alias nrd="npm run dev"
+alias nrt="npm run test"
 
 ## some ruby stuff
 alias rs="rails server"
