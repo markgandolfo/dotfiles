@@ -5,3 +5,7 @@
 	name = Mark
 [init]
 	defaultBranch = main
+[core]
+	excludesfile = /home/mark/.gitignore
+[pager]
+	branch = false
