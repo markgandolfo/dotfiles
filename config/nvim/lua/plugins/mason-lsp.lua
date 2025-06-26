@@ -4,7 +4,14 @@ return {
     'mason-org/mason.nvim',
     'mason-org/mason-lspconfig.nvim',
     'j-hui/fidget.nvim',
+    { "ms-jpq/coq_nvim", branch = "coq" },
+    { "ms-jpq/coq.artifacts", branch = "artifacts" },
   },
+  init = function()
+    vim.g.coq_settings = {
+      auto_start = true,
+    }
+  end,
   config = function()
     local servers = {
       pyright = {},

@@ -27,7 +27,7 @@ return {
           },
         },
 
-        file_ignore_patterns = { 'node_modules', '.git', '*/build/*', 'assets/builds/', 'target' }
+        file_ignore_patterns = { 'node_modules', '.git', '*/build/*', 'assets/builds/', 'target' },
       },
 
       extensions = {
