@@ -24,6 +24,12 @@ return {
           disable_cmd = ':Gitsigns toggle_signs<CR>',
           state = true,
         },
+        {
+          name = "Wrap",
+          enable_cmd = ':set wrap<CR>',
+          disable_cmd = ':set nowrap<CR>',
+          state = vim.wo.wrap,
+        }
       },
     }
   end,
