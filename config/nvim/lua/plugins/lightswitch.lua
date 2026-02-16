@@ -1,7 +1,7 @@
 
 return {
-  -- dir = '~/src/lua/lightswitch.nvim',
-  'markgandolfo/lightswitch.nvim',
+  dir = '~/src/lua/lightswitch.nvim',
+  -- 'markgandolfo/lightswitch.nvim',
   dependencies = { 'MunifTanjim/nui.nvim' },
   config = function()
     require('lightswitch').setup {
@@ -29,8 +29,20 @@ return {
           enable_cmd = ':set wrap<CR>',
           disable_cmd = ':set nowrap<CR>',
           state = vim.wo.wrap,
-        }
-      },
+        },
+        {
+          name = "Notify Test",
+          enable_cmd = "vim.notify('Toggled ON!')",
+          disable_cmd = "vim.notify('Toggled OFF!')",
+          state = false,
+        },
+        {
+          name = "No Neck Pain",
+          enable_cmd = "NoNeckPain",
+          disable_cmd = "NoNeckPain",
+          state = false,
+        },
+      }
     }
   end,
 }
